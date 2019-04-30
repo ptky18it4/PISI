@@ -1,0 +1,55 @@
+[
+    {
+        "No" : "1",
+        "English" : "Abstract",
+        "IPA" : "/əbˈstrækt/",
+        "Vietnamese" : "Trừu tượng",
+        "SoundSimilar" : "Khái niệm khá trừu tượng, tôi hơi áp lực vì sợ bị trách là giảng tệ.",
+        "urlImage" : "./image/robot.jpg. ",
+        "urlSound" : "https://glosbe.com/fb_aud/mp3/dy217483_abstract.mp3.cvrt.mp3"
+        
+        },
+        {
+            "No"  :"2",
+            "English" : "Address",
+            "IPA" : "/ə.ˈdrɛs/",
+            "Vietnamese" : "Địa chỉ",
+            "SoundSimilar" : "Ở ngoài trời rét lắm, địa chỉ nhà câu đâu tớ đưa về.",
+            "urlImage" : "./image/address.png.",
+            "urlSound" : "sound/Address_1.mp3"
+            
+        },
+        {
+            "No"  :"3",
+            "English" : "Admit",
+            "IPA" : "/ædˈmɪt/",
+            "Vietnamese" : "Thừa nhận",
+            "SoundSimilar" : "Ăn mít không hết thì thừa nhận đi.",
+            "urlImage" : "./image/address.png. ",
+            "urlSound" : "sound/Admit0.mp3"
+            
+        },
+        {
+            "No"  :"4",
+            "English" : "Allow",
+            "IPA" : "/əˈlaʊ/",
+            "Vietnamese" : "Cho phép",
+            "SoundSimilar" : "Ôi lâu thế, giám đốc cậu đã cho phép cậu đi nhậu với tớ chưa ?.",
+            "urlImage" : "http://img.gatv.vn/name/2018/04/06/quan-khuyen-ky-binh-content-2.jpg ",
+            "urlSound" :"sound/#.mp3"
+            
+        },
+        {
+            "No"  :"5",
+            "English" : "Adress",
+            "IPA" : "/ə.ˈds/",
+            "Vietnamese" : "a chỉ",
+            "SoundSimilar" : "Ở ni trời rét lắm, địa chỉ nhà câu đâu tớ đưa về.",
+            "urlImage" : "http://img.gatv.vn/name/2018/04/06/quan-khuyen-ky-binh-content-2.jpg ",
+            "urlSound" :"sound/#.mp3"
+            
+        }
+
+    
+
+]

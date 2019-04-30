@@ -104,10 +104,10 @@
             <div class="row">
                 <div class=" col-md-3 col-sm-3 ">
                     <div class="widget-wrap">
-                        <div class=" search-widget" id="search-keywords">
-                            <!-- <form class="search-form " action="#" > -->
-                                <input id="keywords" placeholder="key" name="search" type="text">
-                                <button onclick="search()"><i class="fa fa-search"></i></button>
+                        <div class=" search-widget search-form" id="search-keywords">
+                            <!-- <form class="search-form " action="#">  -->
+                            <input id="keywords" placeholder="key" name="search" type="text">
+                            <button onclick="search()" name="name" type="text"><i class="fa fa-search"></i></button>
                             <!-- </form> -->
                             <ul id="word_list"></ul>
                         </div>
@@ -243,193 +243,21 @@
 </body>
 
 </html>
+
+
+
 <!-- Tạo cơ sở dữ liệu mẫu -->
 <script type="text/javascript">
     var dictionary =
         [
-            {
-                "No": "1",
-                "English": "Abstract",
-                "IPA": ["/əbˈstrækt/ , /əbˈstrækt/"],
-                "Vietnamese": "Trừu tượng",
-                "SoundSimilar": ["Khái niệm khá trừu tượng, tôi hơi áp lực vì sợ bị trách là giảng tệ."],
-                "urlImage": ["img/19.jpg"],
-                "urlSound": ["/sound/test.mp3"]
-
-            },
-            {
-                "No": "2",
-                "English": "Address",
-                "IPA": ["/ə.ˈdrɛs/"],
-                "Vietnamese": "Địa chỉ",
-                "SoundSimilar": ["Ở ngoài trời rét lắm, địa chỉ nhà câu đâu tớ đưa về."],
-                "urlImage": ["img/20.jpg"],
-                "urlSound": ["sound/Address_1.mp3"]
-
-            },
-            {
-                "No": "3",
-                "English": "Admit",
-                "IPA": "/ædˈmɪt/",
-                "Vietnamese": "Thừa nhận",
-                "SoundSimilar": ["Ăn mít không hết thì thừa nhận đi."],
-                "urlImage": ["img/21.jpg"],
-                "urlSound": ["sound/Admit0.mp3"]
-
-            },
-            {
-                "No": "4",
-                "English": "Allow",
-                "IPA": "/əˈlaʊ/",
-                "Vietnamese": "Cho phép",
-                "SoundSimilar": ["Ôi lâu thế, giám đốc cậu đã cho phép cậu đi nhậu với tớ chưa ?."],
-                "urlImage": ["img/21.jpg"],
-                "urlSound": ["sound/#.mp3"]
-
-            },
-            {
-                "No": "5",
-                "English": "Hế nhô men",
-                "IPA": "/ə.ˈds/",
-                "Vietnamese": "Địa chỉ",
-                "SoundSimilar": ["Ở ni trời rét lắm, địa chỉ nhà câu đâu tớ đưa về."],
-                "urlImage": ["img/bitis messi.jpg"],
-                "urlSound": ["sound/#.mp3"]
-
-            },
-            {
-                "No": "1",
-                "English": "Chào chú e",
-                "IPA": "/əbˈstrækt/",
-                "Vietnamese": "Trừu tượng",
-                "SoundSimilar": ["Khái niệm khá trừu tượng, tôi hơi áp lực vì sợ bị trách là giảng tệ."],
-                "urlImage": ["img/bitis hunter red.jpg"],
-                "urlSound": "https://glosbe.com/fb_aud/mp3/dy217483_abstract.mp3.cvrt.mp3"
-
-            },
-            {
-                "No": ["2"],
-                "English": ["Chào bà con"],
-                "IPA": ["/ə.ˈdrɛs/"],
-                "Vietnamese": ["Địa chỉ"],
-                "SoundSimilar": ["Ở ngoài trời rét lắm, địa chỉ nhà câu đâu tớ đưa về."],
-                "urlImage": ["img/bitis marvel.jpg"],
-                "urlSound": ["sound/Address_1.mp3"]
-
-            },
-            {
-                "No": ["3"],
-                "English": ["A nhô"],
-                "IPA": ["/ædˈmɪt/"],
-                "Vietnamese": ["Thừa nhận"],
-                "SoundSimilar": ["Ăn mít không hết thì thừa nhận đi."],
-                "urlImage": ["img/bitis vietnam.jpg "],
-                "urlSound": ["sound/Admit0.mp3"]
-
-            },
-            {
-                "No": ["4"],
-                "English": ["ok"],
-                "IPA": ["/əˈlaʊ/"],
-                "Vietnamese": ["Cho phép"],
-                "SoundSimilar": ["3 ĐỒ QUỶ --- EASY"],
-                "urlImage": ["https://b.f7.photo.talk.zdn.vn/2961777965418525921/0e4b26d1349bd1c5888a.jpg"],
-                "urlSound": ["sound/#.mp3"]
-
-            },
-            {
-                "No": ["5"],
-                "English": ["a"],
-                "IPA": ["/ə.ˈds/"],
-                "Vietnamese": ["Địa chỉ"],
-                "SoundSimilar": ["Ở ni trời rét lắm, địa chỉ nhà câu đâu tớ đưa về."],
-                "urlImage": ["img/22.jpg "],
-                "urlSound": ["sound/#.mp3"]
-
-            },
-            {
-                "No": ["1"],
-                "English": [""],
-                "IPA": ["/əbˈstrækt/"],
-                "Vietnamese": ["Trừu tượng"],
-                "SoundSimilar": ["Khái niệm khá trừu tượng, tôi hơi áp lực vì sợ bị trách là giảng tệ."],
-                "urlImage": ["img/17.jpg"],
-                "urlSound": "https://glosbe.com/fb_aud/mp3/dy217483_abstract.mp3.cvrt.mp3"
-
-            },
-            {
-                "No": ["2"],
-                "English": ["Address"],
-                "IPA": ["/ə.ˈdrɛs/"],
-                "Vietnamese": ["Địa chỉ"],
-                "SoundSimilar": ["Ở ngoài trời rét lắm, địa chỉ nhà câu đâu tớ đưa về."],
-                "urlImage": ["img/bitis vietnam.jpg"],
-                "urlSound": ["sound/Address_1.mp3"]
-
-            },
-            {
-                "No": ["3"],
-                "English": ["Admit"],
-                "IPA": ["/ædˈmɪt/"],
-                "Vietnamese": ["Thừa nhận"],
-                "SoundSimilar": ["Ăn mít không hết thì thừa nhận đi."],
-                "urlImage": ["img/bitis marvel.jpg"],
-                "urlSound": ["sound/Admit0.mp3"]
-
-            },
-            {
-                "No": ["4"],
-                "English": ["Allow"],
-                "IPA": ["/əˈlaʊ/"],
-                "Vietnamese": ["Cho phép"],
-                "SoundSimilar": ["Ôi lâu thế, giám đốc cậu đã cho phép cậu đi nhậu với tớ chưa ?."],
-                "urlImage": ["http://img.gatv.vn/name/2018/04/06/quan-khuyen-ky-binh-content-2.jpg "],
-                "urlSound": ["sound/#.mp3"]
-
-            },
-            {
-                "No": ["3"],
-                "English": ["Admit"],
-                "IPA": ["/ædˈmɪt/"],
-                "Vietnamese": ["Thừa nhận"],
-                "SoundSimilar": ["Ăn mít không hết thì thừa nhận đi."],
-                "urlImage": ["img/bitis vietnam.jpg "],
-                "urlSound": ["sound/Admit0.mp3"]
-
-            },
-            {
-                "No": ["4"],
-                "English": ["Allow"],
-                "IPA": ["/əˈlaʊ/"],
-                "Vietnamese": ["Cho phép"],
-                "SoundSimilar": ["Ôi lâu thế, giám đốc cậu đã cho phép cậu đi nhậu với tớ chưa ?."],
-                "urlImage": ["img/orange.jpg "],
-                "urlSound": ["sound/#.mp3"]
-
-            },
-            {
-                "No": ["5"],
-                "English": ["Adress"],
-                "IPA": ["/ə.ˈds/"],
-                "Vietnamese": ["Địa chỉ"],
-                "SoundSimilar": ["Ở ni trời rét lắm, địa chỉ nhà câu đâu tớ đưa về."],
-                "urlImage": ["img/22.jpg "],
-                "urlSound": ["sound/#.mp3"]
-
-            },
-            {
-                "No": ["1"],
-                "English": ["Abstract"],
-                "IPA": ["/əbˈstrækt/"],
-                "Vietnamese": ["Trừu tượng"],
-                "SoundSimilar": ["Khái niệm khá trừu tượng, tôi hơi áp lực vì sợ bị trách là giảng tệ."],
-                "urlImage": ["img/17.jpg"],
-                "urlSound": "https://glosbe.com/fb_aud/mp3/dy217483_abstract.mp3.cvrt.mp3"
-
-            }
+            { "No.": '1.0',
+              "English": ["Abstract"],
+              "IPA ": ["/əbˈstrækt/"],
+              "Vietnamese": ["Trừu tượng"],
+              "SoundSimilar": ["Khái niệm khá trừu tượng, tôi hơi áp lực vì sợ bị trách là giảng tệ."],
+            "urlImage" : ["img/17.jpg"] }
         ]
 
-    
     init = function () {
         for (var i = 0; i < dictionary.length; i++) {
             document.getElementById('word_list').innerHTML += "<li onclick='show(" + i + ")'>" + dictionary[i].English + "</li>";
@@ -444,7 +272,7 @@
         document.getElementById('vietnamese').innerHTML = "&emsp;" + dictionary[i].Vietnamese;
 
         var list = "";
-        
+
         for (var j = 0; j < dictionary[i].SoundSimilar.length; j++) {
             list += "<h3>Âm thanh tương tự</h3><p>&emsp; " + dictionary[i].SoundSimilar[j] + "</p>";
             list += "<img style=' width: 50%; height: 50%; max-width: 100%;padding: 5%;' src='" + dictionary[i].urlImage[j] + "'>";
@@ -458,10 +286,10 @@
 
 
 
-    function  search() {
+    function search() {
 
         query = document.getElementById('keywords').value;
-        
+
         if (query == "") {
             return;
         }
@@ -481,10 +309,6 @@
         if (found >= 0) {
             show(found);
         }
-    }
-
-    function myFunction() {
-        alert("Hello! I am an alert box!");
     }
 
 </script>
